@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D2F99F22572942456F8118618E9BE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		12C5A935CC1BB42CD2B8E5FF58A8E734 /* Pods-Niki-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C4AD915E156DF9600268532AF4399 /* Pods-Niki-dummy.m */; };
+		1478A6D9B658157934AA9007BAF0B861 /* XMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064B09099BCE8AB922C1D31F67B2CF6A /* XMSegmentedControl.swift */; };
+		160FCFD7A90A6548F51A116B5A79AB44 /* XMSegmentedControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF27B0447A3BF3D204121FB21DC55D51 /* XMSegmentedControl.bundle */; };
+		47EBB2F109C97CC2D84CE00B64163D8C /* XMSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD10F6F2BDFDD00AAFCEF9E1921EAF8F /* XMSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57986C1107736ACE227A68F90E88E634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6F158411770F2B1A75F91FED1A54A3BB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E148554D35755E7169929526878C286 /* SwiftyJSON.swift */; };
+		747786F3BA84A0E6128996596C7E7A0A /* Pods-Niki-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79EF72B5CB9EE07415C98DD79D8DC6AB /* Pods-Niki-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		851FB8702A16E54DA0D2112898213587 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		957E41851B676F8254BCEBA3AB2AB181 /* XMSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54402EC627B9B7055EE6799F35472794 /* XMSegmentedControl-dummy.m */; };
+		BB37AFC2CA397127B12DE50F4B12AE27 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5C4050852E0CF63CE7A9D9B142FAA5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2CF42AEC99CB9EC59E83BC8447A0477 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FD8470B8607076E5FA78D60F3B0E43 /* SwiftyJSON-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		015B3C6A8C7C4C91E6FEFFF7ABC1ABEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7968790B6219DA70EAEEB59D21CBC85;
+			remoteInfo = SwiftyJSON;
+		};
+		80EBE5E4298576D5559D84CBC66C2D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91E3941DDE9589373EDFC1C0291481D5;
+			remoteInfo = "XMSegmentedControl-XMSegmentedControl";
+		};
+		C071C27496261D30C9ECF7678115CB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5893D3F3A5151588919A5D4F6ED0CDD9;
+			remoteInfo = XMSegmentedControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064B09099BCE8AB922C1D31F67B2CF6A /* XMSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMSegmentedControl.swift; path = Pod/Classes/XMSegmentedControl.swift; sourceTree = "<group>"; };
+		22805AB1A7F30F546F2EA4991E6B59E2 /* ResourceBundle-XMSegmentedControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XMSegmentedControl-Info.plist"; sourceTree = "<group>"; };
+		288D5D5A4606F703BFDDE6D28069EDBC /* Pods-Niki.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Niki.modulemap"; sourceTree = "<group>"; };
+		2C111003BA73062FA9BDB71B170EF859 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		3EFD59F01CFE925FD7BD0AD1DF92B5AE /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		41145BD4A651B671EAF8AAA77774798A /* XMSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XMSegmentedControl.modulemap; sourceTree = "<group>"; };
+		54402EC627B9B7055EE6799F35472794 /* XMSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMSegmentedControl-dummy.m"; sourceTree = "<group>"; };
+		64CDA0EA54642BC849B68B6421F84BC7 /* Pods-Niki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Niki.debug.xcconfig"; sourceTree = "<group>"; };
+		6DFF291D9F14CE24537D8AEF6E0035F1 /* XMSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMSegmentedControl.framework; path = XMSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		765E18E84F99649DAC131FD2DD745FB2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EF72B5CB9EE07415C98DD79D8DC6AB /* Pods-Niki-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Niki-umbrella.h"; sourceTree = "<group>"; };
+		7AD4294A3647A1C2259040E8DE83AE46 /* Pods-Niki-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Niki-frameworks.sh"; sourceTree = "<group>"; };
+		8B95C6D61CF40E0B2AA66E5C53394A76 /* XMSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMSegmentedControl.xcconfig; sourceTree = "<group>"; };
+		8EE1CBF9DFEABB48EA5B04430F73501F /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E148554D35755E7169929526878C286 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		A4FD8470B8607076E5FA78D60F3B0E43 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		A9D9F8BB9CC543853BA714E77514B192 /* Pods-Niki-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Niki-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD10F6F2BDFDD00AAFCEF9E1921EAF8F /* XMSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		AFAF54A05DD6D6EA8DDCA852EEC492F0 /* Pods_Niki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Niki.framework; path = "Pods-Niki.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B5785DC9D67D4FC1117ACEC5DA3A0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68BC4246F6A8DBCB0CF9382C4CE6ECF /* Pods-Niki-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Niki-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF27B0447A3BF3D204121FB21DC55D51 /* XMSegmentedControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XMSegmentedControl.bundle; path = XMSegmentedControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEB040B2C51C584A426B928EA229D1C /* Pods-Niki-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Niki-resources.sh"; sourceTree = "<group>"; };
+		DEF5F945516370FD9CD67C494827FAAF /* Pods-Niki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Niki.release.xcconfig"; sourceTree = "<group>"; };
+		DFB165687F84E479D2CF9FE93E60DE73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E678D315911C763BD37A307AC4A391AD /* XMSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		EE851C76EDC9F0D1A19AFD52B977E711 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5C4AD915E156DF9600268532AF4399 /* Pods-Niki-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Niki-dummy.m"; sourceTree = "<group>"; };
+		FE5C4050852E0CF63CE7A9D9B142FAA5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0FBAE4D0807A6BEF0909EDC524848A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851FB8702A16E54DA0D2112898213587 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F82F0E7CE711D97B1672579CC180073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CF84F1291B894F970060C8B0EA7DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57986C1107736ACE227A68F90E88E634 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E579109E6F494BA9B3508EE3D5446A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D2F99F22572942456F8118618E9BE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02E14A44EA3428BCA86255D952B56B2C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7188457BC39B003117544A1C2473727B /* Pods-Niki */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		363F83AFCE122D450F29DDF077D7C64E /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				9E148554D35755E7169929526878C286 /* SwiftyJSON.swift */,
+				CF340386BE3A3522DDE84F7EDB07C74B /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7188457BC39B003117544A1C2473727B /* Pods-Niki */ = {
+			isa = PBXGroup;
+			children = (
+				DFB165687F84E479D2CF9FE93E60DE73 /* Info.plist */,
+				288D5D5A4606F703BFDDE6D28069EDBC /* Pods-Niki.modulemap */,
+				C68BC4246F6A8DBCB0CF9382C4CE6ECF /* Pods-Niki-acknowledgements.markdown */,
+				A9D9F8BB9CC543853BA714E77514B192 /* Pods-Niki-acknowledgements.plist */,
+				FC5C4AD915E156DF9600268532AF4399 /* Pods-Niki-dummy.m */,
+				7AD4294A3647A1C2259040E8DE83AE46 /* Pods-Niki-frameworks.sh */,
+				DAEB040B2C51C584A426B928EA229D1C /* Pods-Niki-resources.sh */,
+				79EF72B5CB9EE07415C98DD79D8DC6AB /* Pods-Niki-umbrella.h */,
+				64CDA0EA54642BC849B68B6421F84BC7 /* Pods-Niki.debug.xcconfig */,
+				DEF5F945516370FD9CD67C494827FAAF /* Pods-Niki.release.xcconfig */,
+			);
+			name = "Pods-Niki";
+			path = "Target Support Files/Pods-Niki";
+			sourceTree = "<group>";
+		};
+		71F722219DFC9624AF30D7329E1BFEC9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE851C76EDC9F0D1A19AFD52B977E711 /* Info.plist */,
+				22805AB1A7F30F546F2EA4991E6B59E2 /* ResourceBundle-XMSegmentedControl-Info.plist */,
+				41145BD4A651B671EAF8AAA77774798A /* XMSegmentedControl.modulemap */,
+				8B95C6D61CF40E0B2AA66E5C53394A76 /* XMSegmentedControl.xcconfig */,
+				54402EC627B9B7055EE6799F35472794 /* XMSegmentedControl-dummy.m */,
+				E678D315911C763BD37A307AC4A391AD /* XMSegmentedControl-prefix.pch */,
+				AD10F6F2BDFDD00AAFCEF9E1921EAF8F /* XMSegmentedControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMSegmentedControl";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8FB7255B71CEAC74C0F5F44712C261F6 /* Pods */,
+				C42AEC3BAC31F749508601FE1D51FF57 /* Products */,
+				02E14A44EA3428BCA86255D952B56B2C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB7255B71CEAC74C0F5F44712C261F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				363F83AFCE122D450F29DDF077D7C64E /* SwiftyJSON */,
+				B6588CB88E4606A2B7A09065D7ADE0D8 /* XMSegmentedControl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6588CB88E4606A2B7A09065D7ADE0D8 /* XMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				064B09099BCE8AB922C1D31F67B2CF6A /* XMSegmentedControl.swift */,
+				71F722219DFC9624AF30D7329E1BFEC9 /* Support Files */,
+			);
+			name = XMSegmentedControl;
+			path = XMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42AEC3BAC31F749508601FE1D51FF57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFAF54A05DD6D6EA8DDCA852EEC492F0 /* Pods_Niki.framework */,
+				765E18E84F99649DAC131FD2DD745FB2 /* SwiftyJSON.framework */,
+				CF27B0447A3BF3D204121FB21DC55D51 /* XMSegmentedControl.bundle */,
+				6DFF291D9F14CE24537D8AEF6E0035F1 /* XMSegmentedControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF340386BE3A3522DDE84F7EDB07C74B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5785DC9D67D4FC1117ACEC5DA3A0B /* Info.plist */,
+				8EE1CBF9DFEABB48EA5B04430F73501F /* SwiftyJSON.modulemap */,
+				3EFD59F01CFE925FD7BD0AD1DF92B5AE /* SwiftyJSON.xcconfig */,
+				A4FD8470B8607076E5FA78D60F3B0E43 /* SwiftyJSON-dummy.m */,
+				2C111003BA73062FA9BDB71B170EF859 /* SwiftyJSON-prefix.pch */,
+				FE5C4050852E0CF63CE7A9D9B142FAA5 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10478D5FB156FC05DEAB79FB1AD3422B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EBB2F109C97CC2D84CE00B64163D8C /* XMSegmentedControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FAB2992F59E5A1AA372E2A69634C2E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747786F3BA84A0E6128996596C7E7A0A /* Pods-Niki-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DFA36A757C26DAC536D3F9FC2FB1538 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB37AFC2CA397127B12DE50F4B12AE27 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5893D3F3A5151588919A5D4F6ED0CDD9 /* XMSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8AC3ADBE55EFE7437FF46295CD8C9D /* Build configuration list for PBXNativeTarget "XMSegmentedControl" */;
+			buildPhases = (
+				FCA28BC213E1D9E944D0543E7D686516 /* Sources */,
+				3F7CF84F1291B894F970060C8B0EA7DB /* Frameworks */,
+				3A23BBEDA111E1ABB1B2DB6A77EC6B58 /* Resources */,
+				10478D5FB156FC05DEAB79FB1AD3422B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7EED48BDADA0DDB1C62429362A5D35 /* PBXTargetDependency */,
+			);
+			name = XMSegmentedControl;
+			productName = XMSegmentedControl;
+			productReference = 6DFF291D9F14CE24537D8AEF6E0035F1 /* XMSegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91E3941DDE9589373EDFC1C0291481D5 /* XMSegmentedControl-XMSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250F06DD74481BD296DD4CDA2D2B12A7 /* Build configuration list for PBXNativeTarget "XMSegmentedControl-XMSegmentedControl" */;
+			buildPhases = (
+				BFD0B9102647B3A0992BC2DC8A0CD355 /* Sources */,
+				1F82F0E7CE711D97B1672579CC180073 /* Frameworks */,
+				DB0A9C5AAD7CAB80C508E6467669475C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XMSegmentedControl-XMSegmentedControl";
+			productName = "XMSegmentedControl-XMSegmentedControl";
+			productReference = CF27B0447A3BF3D204121FB21DC55D51 /* XMSegmentedControl.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E7968790B6219DA70EAEEB59D21CBC85 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D333723776CC5C1F750B8EC8105269AE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				603E38575255F2F959EC04536DF7312B /* Sources */,
+				1A0FBAE4D0807A6BEF0909EDC524848A /* Frameworks */,
+				9DFA36A757C26DAC536D3F9FC2FB1538 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 765E18E84F99649DAC131FD2DD745FB2 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F06503275A101A6FB5EED4A7093E0472 /* Pods-Niki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4E4948E75D3FE9A3B193554CB88C5F /* Build configuration list for PBXNativeTarget "Pods-Niki" */;
+			buildPhases = (
+				786FDD8689CC4E6F83E5DD35173137E8 /* Sources */,
+				D2E579109E6F494BA9B3508EE3D5446A /* Frameworks */,
+				5FAB2992F59E5A1AA372E2A69634C2E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DC07F9AFB287DC9DFB10437EF8CC204 /* PBXTargetDependency */,
+				47FFD9D0E56973903BD843E4C385D775 /* PBXTargetDependency */,
+			);
+			name = "Pods-Niki";
+			productName = "Pods-Niki";
+			productReference = AFAF54A05DD6D6EA8DDCA852EEC492F0 /* Pods_Niki.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C42AEC3BAC31F749508601FE1D51FF57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06503275A101A6FB5EED4A7093E0472 /* Pods-Niki */,
+				E7968790B6219DA70EAEEB59D21CBC85 /* SwiftyJSON */,
+				5893D3F3A5151588919A5D4F6ED0CDD9 /* XMSegmentedControl */,
+				91E3941DDE9589373EDFC1C0291481D5 /* XMSegmentedControl-XMSegmentedControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A23BBEDA111E1ABB1B2DB6A77EC6B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160FCFD7A90A6548F51A116B5A79AB44 /* XMSegmentedControl.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A9C5AAD7CAB80C508E6467669475C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		603E38575255F2F959EC04536DF7312B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CF42AEC99CB9EC59E83BC8447A0477 /* SwiftyJSON-dummy.m in Sources */,
+				6F158411770F2B1A75F91FED1A54A3BB /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		786FDD8689CC4E6F83E5DD35173137E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C5A935CC1BB42CD2B8E5FF58A8E734 /* Pods-Niki-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD0B9102647B3A0992BC2DC8A0CD355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA28BC213E1D9E944D0543E7D686516 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957E41851B676F8254BCEBA3AB2AB181 /* XMSegmentedControl-dummy.m in Sources */,
+				1478A6D9B658157934AA9007BAF0B861 /* XMSegmentedControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DC07F9AFB287DC9DFB10437EF8CC204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = E7968790B6219DA70EAEEB59D21CBC85 /* SwiftyJSON */;
+			targetProxy = 015B3C6A8C7C4C91E6FEFFF7ABC1ABEE /* PBXContainerItemProxy */;
+		};
+		47FFD9D0E56973903BD843E4C385D775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMSegmentedControl;
+			target = 5893D3F3A5151588919A5D4F6ED0CDD9 /* XMSegmentedControl */;
+			targetProxy = C071C27496261D30C9ECF7678115CB94 /* PBXContainerItemProxy */;
+		};
+		7C7EED48BDADA0DDB1C62429362A5D35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XMSegmentedControl-XMSegmentedControl";
+			target = 91E3941DDE9589373EDFC1C0291481D5 /* XMSegmentedControl-XMSegmentedControl */;
+			targetProxy = 80EBE5E4298576D5559D84CBC66C2D51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0041D712CE1C3D1F40B1B1367D084B39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF5F945516370FD9CD67C494827FAAF /* Pods-Niki.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Niki/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Niki/Pods-Niki.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Niki;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		312A6AA4E75F8266152864E8895460B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFD59F01CFE925FD7BD0AD1DF92B5AE /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36548A61598361CBE73D81C36B354598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B95C6D61CF40E0B2AA66E5C53394A76 /* XMSegmentedControl.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XMSegmentedControl";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/XMSegmentedControl/ResourceBundle-XMSegmentedControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XMSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		366E812C327730EBEC4835EA3B1909C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CDA0EA54642BC849B68B6421F84BC7 /* Pods-Niki.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Niki/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Niki/Pods-Niki.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Niki;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED03C747D759A22ECB838F7231A6F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B95C6D61CF40E0B2AA66E5C53394A76 /* XMSegmentedControl.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XMSegmentedControl";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/XMSegmentedControl/ResourceBundle-XMSegmentedControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XMSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F1255ACD7D38E8AD3250EA33B06198FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B95C6D61CF40E0B2AA66E5C53394A76 /* XMSegmentedControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMSegmentedControl/XMSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMSegmentedControl/XMSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XMSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4E5B38A4A5440FFC681DBF562E77BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B95C6D61CF40E0B2AA66E5C53394A76 /* XMSegmentedControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMSegmentedControl/XMSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMSegmentedControl/XMSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = XMSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F993E66DA7D1D728767E814DF67D60A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFD59F01CFE925FD7BD0AD1DF92B5AE /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		250F06DD74481BD296DD4CDA2D2B12A7 /* Build configuration list for PBXNativeTarget "XMSegmentedControl-XMSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED03C747D759A22ECB838F7231A6F82 /* Debug */,
+				36548A61598361CBE73D81C36B354598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4E4948E75D3FE9A3B193554CB88C5F /* Build configuration list for PBXNativeTarget "Pods-Niki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366E812C327730EBEC4835EA3B1909C7 /* Debug */,
+				0041D712CE1C3D1F40B1B1367D084B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D333723776CC5C1F750B8EC8105269AE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F993E66DA7D1D728767E814DF67D60A2 /* Debug */,
+				312A6AA4E75F8266152864E8895460B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8AC3ADBE55EFE7437FF46295CD8C9D /* Build configuration list for PBXNativeTarget "XMSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1255ACD7D38E8AD3250EA33B06198FE /* Debug */,
+				F4E5B38A4A5440FFC681DBF562E77BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

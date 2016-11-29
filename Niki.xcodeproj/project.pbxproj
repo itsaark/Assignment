@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0410102DD0C560B8F60C79F6 /* Pods_Niki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00642F9356FBC2A2B0D502B3 /* Pods_Niki.framework */; };
+		DCC7B40E1DEC729800B35099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7B40D1DEC729800B35099 /* AppDelegate.swift */; };
+		DCC7B4101DEC729800B35099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7B40F1DEC729800B35099 /* ViewController.swift */; };
+		DCC7B4131DEC729800B35099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC7B4111DEC729800B35099 /* Main.storyboard */; };
+		DCC7B4151DEC729800B35099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC7B4141DEC729800B35099 /* Assets.xcassets */; };
+		DCC7B4181DEC729800B35099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC7B4161DEC729800B35099 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00642F9356FBC2A2B0D502B3 /* Pods_Niki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Niki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA0BFAA4B629183030C669F /* Pods-Niki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niki.release.xcconfig"; path = "Pods/Target Support Files/Pods-Niki/Pods-Niki.release.xcconfig"; sourceTree = "<group>"; };
+		928860B5FA961A3E70E1D318 /* Pods-Niki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Niki/Pods-Niki.debug.xcconfig"; sourceTree = "<group>"; };
+		DCC7B40A1DEC729800B35099 /* Niki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Niki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC7B40D1DEC729800B35099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCC7B40F1DEC729800B35099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCC7B4121DEC729800B35099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC7B4141DEC729800B35099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC7B4171DEC729800B35099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCC7B4191DEC729800B35099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC7B4071DEC729800B35099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0410102DD0C560B8F60C79F6 /* Pods_Niki.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F85671936483A69F2C73085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00642F9356FBC2A2B0D502B3 /* Pods_Niki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCC7B4011DEC729800B35099 = {
+			isa = PBXGroup;
+			children = (
+				DCC7B40C1DEC729800B35099 /* Niki */,
+				DCC7B40B1DEC729800B35099 /* Products */,
+				F28971806CA27DBA552FD0E3 /* Pods */,
+				3F85671936483A69F2C73085 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC7B40B1DEC729800B35099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC7B40A1DEC729800B35099 /* Niki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC7B40C1DEC729800B35099 /* Niki */ = {
+			isa = PBXGroup;
+			children = (
+				DCC7B40D1DEC729800B35099 /* AppDelegate.swift */,
+				DCC7B40F1DEC729800B35099 /* ViewController.swift */,
+				DCC7B4111DEC729800B35099 /* Main.storyboard */,
+				DCC7B4141DEC729800B35099 /* Assets.xcassets */,
+				DCC7B4161DEC729800B35099 /* LaunchScreen.storyboard */,
+				DCC7B4191DEC729800B35099 /* Info.plist */,
+			);
+			path = Niki;
+			sourceTree = "<group>";
+		};
+		F28971806CA27DBA552FD0E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				928860B5FA961A3E70E1D318 /* Pods-Niki.debug.xcconfig */,
+				1AA0BFAA4B629183030C669F /* Pods-Niki.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC7B4091DEC729800B35099 /* Niki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC7B41C1DEC729800B35099 /* Build configuration list for PBXNativeTarget "Niki" */;
+			buildPhases = (
+				01C198D846FD47CE0C0539C3 /* [CP] Check Pods Manifest.lock */,
+				DCC7B4061DEC729800B35099 /* Sources */,
+				DCC7B4071DEC729800B35099 /* Frameworks */,
+				DCC7B4081DEC729800B35099 /* Resources */,
+				6982809294494127D430801B /* [CP] Embed Pods Frameworks */,
+				047A8D6A0C98BF629B9F909D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Niki;
+			productName = Niki;
+			productReference = DCC7B40A1DEC729800B35099 /* Niki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC7B4021DEC729800B35099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Arjun Kodur";
+				TargetAttributes = {
+					DCC7B4091DEC729800B35099 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E696HLUBV9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DCC7B4051DEC729800B35099 /* Build configuration list for PBXProject "Niki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCC7B4011DEC729800B35099;
+			productRefGroup = DCC7B40B1DEC729800B35099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC7B4091DEC729800B35099 /* Niki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC7B4081DEC729800B35099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC7B4181DEC729800B35099 /* LaunchScreen.storyboard in Resources */,
+				DCC7B4151DEC729800B35099 /* Assets.xcassets in Resources */,
+				DCC7B4131DEC729800B35099 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01C198D846FD47CE0C0539C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		047A8D6A0C98BF629B9F909D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Niki/Pods-Niki-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6982809294494127D430801B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Niki/Pods-Niki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC7B4061DEC729800B35099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC7B4101DEC729800B35099 /* ViewController.swift in Sources */,
+				DCC7B40E1DEC729800B35099 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCC7B4111DEC729800B35099 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC7B4121DEC729800B35099 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC7B4161DEC729800B35099 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC7B4171DEC729800B35099 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC7B41A1DEC729800B35099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCC7B41B1DEC729800B35099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC7B41D1DEC729800B35099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928860B5FA961A3E70E1D318 /* Pods-Niki.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E696HLUBV9;
+				INFOPLIST_FILE = Niki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjunkodur.Niki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCC7B41E1DEC729800B35099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA0BFAA4B629183030C669F /* Pods-Niki.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E696HLUBV9;
+				INFOPLIST_FILE = Niki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjunkodur.Niki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC7B4051DEC729800B35099 /* Build configuration list for PBXProject "Niki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC7B41A1DEC729800B35099 /* Debug */,
+				DCC7B41B1DEC729800B35099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC7B41C1DEC729800B35099 /* Build configuration list for PBXNativeTarget "Niki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC7B41D1DEC729800B35099 /* Debug */,
+				DCC7B41E1DEC729800B35099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCC7B4021DEC729800B35099 /* Project object */;
+}
