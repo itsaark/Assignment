@@ -40,9 +40,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         tableView.tableFooterView = UIView()
         textField.inputView = customInputView
         
-        var frameRect = textField.frame;
-        frameRect.size.height = 40; // <-- Specify the height you want here.
-        textField.frame = frameRect
         
         textField.layer.borderColor = UIColor(red: 181.0/250.0, green: 181.0/250.0, blue: 181.0/250.0, alpha: 1.0).cgColor
         textField.layer.borderWidth = 1.0
@@ -58,8 +55,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
 
         
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
          let icons2:[UIImage] = [UIImage(named: "recharge_144")!, UIImage(named: "bus_144")!, UIImage(named: "icon5")!, UIImage(named: "hotel_144")!, UIImage(named: "icon1")!]
         segmentedControl.segmentIcon = icons2
@@ -100,10 +97,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-        UIView.animate(withDuration: 0.5) {
-            
-            self.view.frame.origin.y += self.keyBoardheight!
-        }
+//        UIView.animate(withDuration: 0.5) {
+//            
+//            self.view.frame.origin.y += self.keyBoardheight!
+//        }
         
         
     }
