@@ -116,7 +116,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     func imageTapped(img: AnyObject) {
         textField.inputView = customInputView
         textField.reloadInputViews()
-    
+        leftbutton.isSelected = true
+        leftbutton.tintColor = UIColor.blue
         print("call")
     }
     
@@ -155,10 +156,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         self.navigationController?.navigationItem.leftBarButtonItem = composeButton
         
-        let leftImage = UIImage(named: "icon2")
+        let leftImage = UIImage(named: "icon2")?.withRenderingMode(.alwaysTemplate)
         
         leftbutton.setBackgroundImage(leftImage, for: .normal)
-        leftbutton.setTitleColor(UIColor.lightGray, for: .normal)
+        leftbutton.tintColor = UIColor.lightGray
         
         leftImageView.image = leftImage
         
