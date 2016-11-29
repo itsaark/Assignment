@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N8i-a6-aIh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,6 +38,7 @@
                             <constraint firstAttribute="trailing" secondItem="Ml0-N9-bjv" secondAttribute="trailing" constant="-2" id="Sha-8B-iLS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="LCr-94-VfL"/>
                     <connections>
                         <outlet property="customInputView" destination="VOl-Xl-uyH" id="8sh-Cl-Sph"/>
                         <outlet property="segmentedControl" destination="ZbB-aW-FK3" id="Nff-17-Oku"/>
@@ -65,7 +66,7 @@
                                     <rect key="frame" x="0.0" y="28" width="361" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vCk-zG-8Af" id="34O-Ri-0jY">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </tableViewCellContentView>
                                 </tableViewCell>
@@ -87,6 +88,24 @@
                         <constraint firstAttribute="trailing" secondItem="ThO-Bx-EP5" secondAttribute="trailing" id="gTl-j3-zuF"/>
                     </constraints>
                 </view>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="366-nI-y8Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N8i-a6-aIh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wSd-lL-3d0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DoS-3B-B2v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mz-M5-XBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>

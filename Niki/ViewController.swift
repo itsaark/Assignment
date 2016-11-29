@@ -10,7 +10,7 @@ import UIKit
 import XMSegmentedControl
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, XMSegmentedControlDelegate {
+class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, XMSegmentedControlDelegate, UITextFieldDelegate {
 
     @IBOutlet var customInputView: UIView!
     @IBOutlet weak var textField: UITextField!
@@ -24,8 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     var domain = [String:String]()
     var suggestions = [String]()
     
-    let leftImageView = UIImageView()
-    let rightImageView = UIImageView()
+    let leftbutton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+    
+    let leftImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+    let rightImageView = UIImageView(frame: CGRect(x: -5, y: 0, width: 20, height: 20))
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -35,26 +37,31 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textField.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        textField.inputView = customInputView
+        //textField.inputView = customInputView
+        textField.inputView = nil
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(imageTapped(img:)))
+        leftImageView.isUserInteractionEnabled = true
+        leftImageView.addGestureRecognizer(tapGestureRecognizer)
+        leftbutton.isEnabled = true
+        leftbutton.addGestureRecognizer(tapGestureRecognizer)
         
         
         textField.layer.borderColor = UIColor(red: 181.0/250.0, green: 181.0/250.0, blue: 181.0/250.0, alpha: 1.0).cgColor
         textField.layer.borderWidth = 1.0
         
-        leftImageView.tintColor = UIColor.black
-        rightImageView.tintColor = UIColor.black
-        
         textField.rightViewMode = .always
         textField.leftViewMode = .always
         
-        textField.leftView = leftImageView
+        textField.leftView = leftbutton
         textField.rightView = rightImageView
+        textField.rightView?.tintColor = UIColor.blue
         
 
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
@@ -97,12 +104,20 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        textField.inputView = nil
 //        UIView.animate(withDuration: 0.5) {
 //            
 //            self.view.frame.origin.y += self.keyBoardheight!
 //        }
         
         
+    }
+    
+    func imageTapped(img: AnyObject) {
+        textField.inputView = customInputView
+        textField.reloadInputViews()
+    
+        print("call")
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -127,8 +142,29 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     override func viewWillAppear(_ animated: Bool) {
         
-        leftImageView.image = UIImage(named: "icon2")!
-        rightImageView.image = UIImage(named: "icon4")!
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.lightGray, NSFontAttributeName: UIFont(name: "avenir", size: 21)!]
+        self.navigationItem.title = "Niki"
+        
+        
+        
+        //Setting right bar button item
+        let hamburger = UIImage(named: "hamburger")
+        
+        let composeButton = UIBarButtonItem(image: hamburger, style: .plain, target: self, action: nil)
+        
+        self.navigationController?.navigationItem.leftBarButtonItem = composeButton
+        
+        let leftImage = UIImage(named: "icon2")
+        
+        leftbutton.setBackgroundImage(leftImage, for: .normal)
+        leftbutton.setTitleColor(UIColor.lightGray, for: .normal)
+        
+        leftImageView.image = leftImage
+        
+        let rightImage = UIImage(named: "icon4")!
+
+        rightImageView.image = rightImage
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             
@@ -144,7 +180,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         task.resume()
 
     }
-
+    
+    
+    
 
 }
 
