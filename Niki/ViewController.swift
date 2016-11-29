@@ -25,8 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     var suggestions = [String]()
     
     let leftbutton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+    let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     
-    let leftImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     let rightImageView = UIImageView(frame: CGRect(x: -5, y: 0, width: 20, height: 20))
     
     override func didReceiveMemoryWarning() {
@@ -44,9 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         //textField.inputView = customInputView
         textField.inputView = nil
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(imageTapped(img:)))
-        leftImageView.isUserInteractionEnabled = true
-        leftImageView.addGestureRecognizer(tapGestureRecognizer)
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(ViewController.buttonTapped))
         leftbutton.isEnabled = true
         leftbutton.addGestureRecognizer(tapGestureRecognizer)
         
@@ -58,9 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         textField.leftViewMode = .always
         
         textField.leftView = leftbutton
-        textField.rightView = rightImageView
-        textField.rightView?.tintColor = UIColor.blue
-        
+        textField.rightView = rightButton
 
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -105,19 +101,16 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         textField.inputView = nil
-//        UIView.animate(withDuration: 0.5) {
-//            
-//            self.view.frame.origin.y += self.keyBoardheight!
-//        }
-        
+        leftbutton.tintColor = UIColor.lightGray
         
     }
     
-    func imageTapped(img: AnyObject) {
+    func buttonTapped() {
         textField.inputView = customInputView
+        textField.becomeFirstResponder()
         textField.reloadInputViews()
         leftbutton.isSelected = true
-        leftbutton.tintColor = UIColor.blue
+        leftbutton.tintColor = UIColor(red: 60.0/255.0, green: 120.0/255.0, blue: 216.0/255.0, alpha: 1.0)
         print("call")
     }
     
@@ -150,22 +143,21 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         
         //Setting right bar button item
-        let hamburger = UIImage(named: "hamburger")
+        let hamburger = UIImage(named: "hamburger")?.withRenderingMode(.alwaysTemplate)
         
-        let composeButton = UIBarButtonItem(image: hamburger, style: .plain, target: self, action: nil)
+        let hamburgerButton = UIBarButtonItem(image: hamburger, style: .plain, target: self, action: nil)
         
-        self.navigationController?.navigationItem.leftBarButtonItem = composeButton
+        self.navigationController?.navigationItem.leftBarButtonItem = hamburgerButton
         
         let leftImage = UIImage(named: "icon2")?.withRenderingMode(.alwaysTemplate)
         
         leftbutton.setBackgroundImage(leftImage, for: .normal)
         leftbutton.tintColor = UIColor.lightGray
         
-        leftImageView.image = leftImage
         
-        let rightImage = UIImage(named: "icon4")!
-
-        rightImageView.image = rightImage
+        let rightImage = UIImage(named: "icon4")!.withRenderingMode(.alwaysTemplate)
+        rightButton.setBackgroundImage(rightImage, for: .normal)
+        rightButton.tintColor = UIColor(red: 60.0/255.0, green: 120.0/255.0, blue: 216.0/255.0, alpha: 1.0)
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             
