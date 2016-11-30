@@ -10,8 +10,9 @@ import UIKit
 import XMSegmentedControl
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, XMSegmentedControlDelegate, UITextFieldDelegate {
+class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, XMSegmentedControlDelegate, UITextFieldDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet var customInputView: UIView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -41,8 +42,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        //textField.inputView = customInputView
         textField.inputView = nil
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(ViewController.buttonTapped))
         leftbutton.isEnabled = true
@@ -142,7 +145,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         
         
-        //Setting right bar button item
+        //TODO: Setting right bar button item
         let hamburger = UIImage(named: "hamburger")?.withRenderingMode(.alwaysTemplate)
         
         let hamburgerButton = UIBarButtonItem(image: hamburger, style: .plain, target: self, action: nil)
@@ -175,7 +178,18 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CollectionViewCell
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 16
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 1.0
+        return cell
+    }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 7
+    }
 
 }
 

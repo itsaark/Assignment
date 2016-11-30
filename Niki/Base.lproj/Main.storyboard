@@ -21,25 +21,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Hi Aryan! How can I help you?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ml0-N9-bjv">
-                                <rect key="frame" x="0.0" y="646" width="375" height="38"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Hi Aryan! How can I help you?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ml0-N9-bjv">
+                                <rect key="frame" x="0.0" y="629" width="375" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Mtt-Cu-iBo"/>
+                                    <constraint firstAttribute="height" constant="38" id="Mtt-Cu-iBo"/>
                                 </constraints>
                                 <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7us-XD-h2e">
+                                <rect key="frame" x="0.0" y="372" width="375" height="196"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="Q1d-3b-INP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aga-sE-R7s">
+                                    <size key="itemSize" width="200" height="186"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="5" maxX="0.0" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="s8l-gI-Vb1" customClass="CollectionViewCell" customModule="Niki" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="5" width="200" height="186"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="186"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6PT-Rn-VL0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lcM-dV-Qro"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7us-XD-h2e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="806-60-hv8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ml0-N9-bjv" secondAttribute="bottom" id="JUU-j4-MhE"/>
-                            <constraint firstItem="Ml0-N9-bjv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-2" id="Q5Y-jX-DMM"/>
-                            <constraint firstAttribute="trailing" secondItem="Ml0-N9-bjv" secondAttribute="trailing" constant="-2" id="Sha-8B-iLS"/>
+                            <constraint firstItem="Ml0-N9-bjv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q5Y-jX-DMM"/>
+                            <constraint firstAttribute="trailing" secondItem="Ml0-N9-bjv" secondAttribute="trailing" id="Sha-8B-iLS"/>
+                            <constraint firstItem="Ml0-N9-bjv" firstAttribute="top" secondItem="7us-XD-h2e" secondAttribute="bottom" constant="61" id="XgQ-hG-fKw"/>
+                            <constraint firstAttribute="trailing" secondItem="7us-XD-h2e" secondAttribute="trailing" id="ax6-my-hgk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LCr-94-VfL"/>
                     <connections>
+                        <outlet property="collectionView" destination="7us-XD-h2e" id="Otr-pm-Z8L"/>
                         <outlet property="customInputView" destination="VOl-Xl-uyH" id="8sh-Cl-Sph"/>
                         <outlet property="segmentedControl" destination="ZbB-aW-FK3" id="Nff-17-Oku"/>
                         <outlet property="tableView" destination="ThO-Bx-EP5" id="kVW-aa-d8n"/>

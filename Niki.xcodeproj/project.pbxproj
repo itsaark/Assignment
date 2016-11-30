@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0410102DD0C560B8F60C79F6 /* Pods_Niki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00642F9356FBC2A2B0D502B3 /* Pods_Niki.framework */; };
+		DCA0B1EC1DEE54D900A106EF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA0B1EB1DEE54D900A106EF /* CollectionViewCell.swift */; };
 		DCC7B40E1DEC729800B35099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7B40D1DEC729800B35099 /* AppDelegate.swift */; };
 		DCC7B4101DEC729800B35099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7B40F1DEC729800B35099 /* ViewController.swift */; };
 		DCC7B4131DEC729800B35099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC7B4111DEC729800B35099 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		00642F9356FBC2A2B0D502B3 /* Pods_Niki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Niki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA0BFAA4B629183030C669F /* Pods-Niki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niki.release.xcconfig"; path = "Pods/Target Support Files/Pods-Niki/Pods-Niki.release.xcconfig"; sourceTree = "<group>"; };
 		928860B5FA961A3E70E1D318 /* Pods-Niki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Niki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Niki/Pods-Niki.debug.xcconfig"; sourceTree = "<group>"; };
+		DCA0B1EB1DEE54D900A106EF /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DCC7B40A1DEC729800B35099 /* Niki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Niki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC7B40D1DEC729800B35099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC7B40F1DEC729800B35099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				DCC7B4141DEC729800B35099 /* Assets.xcassets */,
 				DCC7B4161DEC729800B35099 /* LaunchScreen.storyboard */,
 				DCC7B4191DEC729800B35099 /* Info.plist */,
+				DCA0B1EB1DEE54D900A106EF /* CollectionViewCell.swift */,
 			);
 			path = Niki;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				DCC7B4101DEC729800B35099 /* ViewController.swift in Sources */,
 				DCC7B40E1DEC729800B35099 /* AppDelegate.swift in Sources */,
+				DCA0B1EC1DEE54D900A106EF /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
