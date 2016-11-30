@@ -178,9 +178,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N8i-a6-aIh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wSd-lL-3d0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wSd-lL-3d0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -28,7 +28,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     let leftbutton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     
-    let rightImageView = UIImageView(frame: CGRect(x: -5, y: 0, width: 20, height: 20))
 
     
     override func viewDidLoad() {
@@ -59,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
-         let icons2:[UIImage] = [UIImage(named: "recharge_144")!, UIImage(named: "bus_144")!, UIImage(named: "icon5")!, UIImage(named: "hotel_144")!, UIImage(named: "icon1")!]
+        let icons2:[UIImage] = [UIImage(named: "recharge_144")!, UIImage(named: "bus_144")!, UIImage(named: "icon5")!, UIImage(named: "hotel_144")!, UIImage(named: "icon1")!]
         segmentedControl.segmentIcon = icons2
         segmentedControl.selectedItemHighlightStyle = .BottomEdge
         segmentedControl.backgroundColor = UIColor.clear
@@ -70,6 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
     }
     
+    //Getting notifications for custom inputView
     func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
@@ -81,12 +81,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
     }
     
-    func xmSegmentedControl(xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
-        print("SegmentedControl Selected Segment: \(selectedSegment)")
-        
-        tableView.reloadData()
-    }
-    
     func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y != 0{
@@ -96,22 +90,33 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         }
     }
     
+    //Changes table view as the user swipes the options
+    
+    func xmSegmentedControl(xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
+        
+        tableView.reloadData()
+    }
+    
+
+    //Dismissing customInput view
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         textField.inputView = nil
         leftbutton.tintColor = UIColor.lightGray
+        collectionView.isHidden = true
         
     }
     
+    //Left button tapped
     func buttonTapped() {
         textField.inputView = customInputView
         textField.becomeFirstResponder()
         textField.reloadInputViews()
         leftbutton.isSelected = true
         leftbutton.tintColor = UIColor(red: 60.0/255.0, green: 120.0/255.0, blue: 216.0/255.0, alpha: 1.0)
-        print("call")
     }
     
+    //Table view protocol
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -141,9 +146,10 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             self.view.endEditing(true)
             textField.inputView = nil
             leftbutton.tintColor = UIColor.lightGray
+            
+            //Check in local database
             if let userChoicesData = UserDefaults.standard.data(forKey: "Recharge my phone") {
                 self.jsonData = JSON(data: userChoicesData)
-                
                 print("getting data from local data base")
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
@@ -154,11 +160,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             }
             
             
-        } else{
-            
-            
         }
-        
         
     }
     
@@ -170,13 +172,14 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         collectionView.isHidden = true
         
-        //TODO: Setting right bar button item
-        let hamburger = UIImage(named: "hamburger")?.withRenderingMode(.alwaysTemplate)
+        let hamburgerButton = UIButton(type: .custom)
+        hamburgerButton.setImage(UIImage(named: "hamburger"), for: .normal)
+        hamburgerButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         
-        let hamburgerButton = UIBarButtonItem(image: hamburger, style: .plain, target: self, action: nil)
+        let item1 = UIBarButtonItem(customView: hamburgerButton)
         
-        self.navigationController?.navigationItem.leftBarButtonItem = hamburgerButton
-        
+        self.navigationItem.setLeftBarButton(item1, animated: true)
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.lightGray
         let leftImage = UIImage(named: "icon2")?.withRenderingMode(.alwaysTemplate)
         
         leftbutton.setBackgroundImage(leftImage, for: .normal)
