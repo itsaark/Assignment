@@ -24,18 +24,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     var jsonData: JSON?
     var keyBoardheight: CGFloat?
     var icons1:[UIImage]?
-    var domain = [String:String]()
-    var suggestions = [String]()
     
     let leftbutton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
     
     let rightImageView = UIImageView(frame: CGRect(x: -5, y: 0, width: 20, height: 20))
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     
     override func viewDidLoad() {
@@ -141,14 +134,26 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.view.endEditing(true)
-        textField.inputView = nil
-        leftbutton.tintColor = UIColor.lightGray
+        
         
         if self.json?[0]["domains"][segmentedControl.selectedSegment]["suggestions"][indexPath.row].stringValue == "Recharge my phone" {
             
-            getData()
-//            collectionView.isHidden = false
+            self.view.endEditing(true)
+            textField.inputView = nil
+            leftbutton.tintColor = UIColor.lightGray
+            if let userChoicesData = UserDefaults.standard.data(forKey: "Recharge my phone") {
+                self.jsonData = JSON(data: userChoicesData)
+                
+                print("getting data from local data base")
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                    self.collectionView.isHidden = false
+                }
+            } else{
+                getData(key: "Recharge my phone")
+            }
+            
+            
         } else{
             
             
@@ -197,7 +202,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
 
     }
     
-    func getData() {
+    func getData(key: String) {
         
         let task = URLSession.shared.dataTask(with: url1!) { data, response, error in
             
@@ -207,6 +212,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             }
             
             self.jsonData = JSON(data: data)
+            self.storeData(key: key, data: data)
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.collectionView.isHidden = false
@@ -216,6 +222,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         task.resume()
         
+    }
+    
+    func storeData(key: String, data: Data) {
+        
+        UserDefaults.standard.set(data, forKey: key)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
