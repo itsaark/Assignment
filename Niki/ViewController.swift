@@ -19,7 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     @IBOutlet weak var segmentedControl: XMSegmentedControl!
     
     let url = URL(string: "http://private-b2371-mobiletest2.apiary-mock.com/domains")
+    let url1 = URL(string: "http://private-5dca37-chatresponse.apiary-mock.com/chats")
     var json: JSON?
+    var jsonData: JSON?
     var keyBoardheight: CGFloat?
     var icons1:[UIImage]?
     var domain = [String:String]()
@@ -137,13 +139,31 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.view.endEditing(true)
+        textField.inputView = nil
+        leftbutton.tintColor = UIColor.lightGray
+        
+        if self.json?[0]["domains"][segmentedControl.selectedSegment]["suggestions"][indexPath.row].stringValue == "Recharge my phone" {
+            
+            getData()
+//            collectionView.isHidden = false
+        } else{
+            
+            
+        }
+        
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.navigationBar.titleTextAttributes =
             [NSForegroundColorAttributeName: UIColor.lightGray, NSFontAttributeName: UIFont(name: "avenir", size: 21)!]
         self.navigationItem.title = "Niki"
         
-        
+        collectionView.isHidden = true
         
         //TODO: Setting right bar button item
         let hamburger = UIImage(named: "hamburger")?.withRenderingMode(.alwaysTemplate)
@@ -177,18 +197,55 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
 
     }
     
+    func getData() {
+        
+        let task = URLSession.shared.dataTask(with: url1!) { data, response, error in
+            
+            guard let data = data else {
+                print("Data is empty")
+                return
+            }
+            
+            self.jsonData = JSON(data: data)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+                self.collectionView.isHidden = false
+            }
+            
+        }
+        
+        task.resume()
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CollectionViewCell
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = 16
         cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.borderWidth = 1.0
+        
+        cell.buyButton.layer.borderColor = UIColor.lightGray.cgColor
+        cell.buyButton.layer.borderWidth = 1.0
+        
+        if !collectionView.isHidden {
+            cell.title.text = self.jsonData?[0]["choices"][indexPath.row]["Title"].stringValue
+            cell.descriptionLabel.text = self.jsonData?[0]["choices"][indexPath.row]["description"].stringValue
+            cell.validity.text = "Validity - " + (self.jsonData?[0]["choices"][indexPath.row]["validity"].stringValue)!
+            cell.price.text = "Price - " + (self.jsonData?[0]["choices"][indexPath.row]["amount"].stringValue)!
+        }
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        if jsonData != nil {
+            return (self.jsonData?[0]["choices"].count)!
+        }else{
+            return 1
+        }
+        
     }
 
 }
